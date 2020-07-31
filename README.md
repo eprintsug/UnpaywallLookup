@@ -1,7 +1,5 @@
 # UnpaywallLookup - a plugin to find the OA version of a document
 
-## Workflow component indicating whether PDF is available as Open Access
-
 UnpaywallLookup is a simple workflow component that can be used in the submission workflow, 
 for example in the Upload stage.
 
