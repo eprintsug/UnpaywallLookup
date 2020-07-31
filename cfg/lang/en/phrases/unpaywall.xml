@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE phrases SYSTEM "entities.dtd">
+
+<epp:phrases xmlns="http://www.w3.org/1999/xhtml" xmlns:epp="http://eprints.org/ep3/phrase" xmlns:epc="http://eprints.org/ep3/control">
+
+  <!-- Phrases for Unpaywall Upload InputForm Component -->
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:help">This component queries the Unpaywall
+    service to find possible OA documents for this publication in the Web.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:version_title">PDF (<epc:pin name="version"/>) 
+    available</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:default_title">Unpaywall Lookup</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_publisher">A PDF (<epc:pin name="version"/>) is 
+    available Open Access on the publisher's website at the following URL: <epc:pin name="url"/>.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_repository">A PDF (<epc:pin name="version"/>) is
+    available Open Access at a <epc:pin name="host_type"/> at the following URL: <epc:pin name="url"/>.<br/>
+    Please inspect the PDF first for cover pages or watermarks before you decide to upload it to ZORA.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_license">The publication is available under
+    a <epc:pin name="license"/> license.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:no_submitted_version">Due to the 
+    <a href="https://www.hbz.uzh.ch/en/open-access-und-open-science/zora/zora-policy.html" target="_blank">ZORA Policy</a>, submitted versions can not be accepted currently.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:not_oa">There is no Open Access publication
+    according to Unpaywall.</epp:phrase>
+
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:repository">repository</epp:phrase>
+
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:download">Download</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:get_pdf">Get PDF</epp:phrase>
+
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:publishedVersion">Published Version</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:acceptedVersion">Accepted Manuscript</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:submittedVersion">Submitted Version (Preprint)</epp:phrase>
+  <!-- License phrases -->
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by">CC BY</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by-nc">CC BY-NC</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by-sa">CC BY-SA</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by-nd-nc">CC BY-ND-NC</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by-nc-nd">CC BY-NC-ND</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_cc-by-nc-sa">CC BY-NC-SA</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_implied-oa">kind of OA (implied by Unpaywall)</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:license_publisher">publisher</epp:phrase>
+
+  <!-- Errors -->
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:title_doierror">Unpaywall Lookup: DOI is missing or
+    invalid</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:title_error">Unpaywall Lookup: An error has
+    occured</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:not_oa_title">Unpaywall Lookup: No Open Access PDF 
+    found</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:no_doi">The ZORA item has no DOI.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:invalid_doi">The DOI <epc:pin name="doi"/> 
+    of the ZORA item is invalid. Please correct it. It must start with "10."</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unable_to_reach_unpaywall">Unable to reach 
+    the Unpaywall service. It may be temporarily down.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unpaywall_error">Error in the Unpaywall response:
+    <epc:pin name="message"/></epp:phrase>
+
+  <!-- Phrases for Unpaywall Surround help toggle -->
+  <epp:phrase id="Plugin/InputForm/Surround/Unpaywall:show_help">
+    <epc:pin name="link">
+      <span class="fa fa-question-circle fa-lg" aria-hidden="true"></span>
+      <span class="sr-only">Help</span>
+    </epc:pin>
+  </epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Surround/Unpaywall:hide_help">
+    <epc:pin name="link">
+      <span class="fa fa-minus-circle fa-lg" aria-hidden="true"></span>
+      <span class="sr-only">Close help</span>
+    </epc:pin>
+  </epp:phrase>
+
+</epp:phrases>
