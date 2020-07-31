@@ -12,5 +12,5 @@ Open Access.
 - edit the cfg.d/z_unpaywall_api.pl file and add the missing information
 - edit the phrase file(s) so that it matches your repository
 - in your workflow definition (usually cfg/workflows/eprint/default.xml), add
-  &lt;component type="Upload_Unpaywall"/&rt; where you want to have it
+  &lt;component type="Upload_Unpaywall"/> where you want to have it
 - restart your web server
