@@ -12,6 +12,10 @@
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_publisher">Eine PDF-Datei der Publikation 
     (<epc:pin name="version"/>) ist Open Access auf der Verlagswebsite unter folgender URL erhältlich: 
     <epc:pin name="url"/>.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_publisher_bronze">Eine PDF-Datei der Publikation 
+    (<epc:pin name="version"/>) ist frei auf der Verlagswebsite unter folgender URL erhältlich: 
+    <epc:pin name="url"/>. Nachdem Sie es in ZORA hochgeladen haben, überprüft die ZORA-Redaktion, ob das Dokument 
+    Open Access ist. Falls nicht, wird es nur für registrierte Benutzer zugänglich gemacht.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_repository">Eine PDF-Datei der Publikation 
     (<epc:pin name="version"/>) ist Open Access bei einem <epc:pin name="host_type"/> unter folgender URL 
     erhältlich: <epc:pin name="url"/>.<br/>
@@ -26,6 +30,7 @@
     Publikation.</epp:phrase>
 
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:repository">Repositorium</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:publisher">Verlag</epp:phrase>
 
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:download">Download</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:get_pdf">Zugang zum PDF</epp:phrase>
@@ -54,6 +59,7 @@
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:no_doi">Der ZORA-Eintrag besitzt keinen DOI.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:invalid_doi">Der DOI <epc:pin name="doi"/> 
     des ZORA-Eintrags ist ungültig. Bitte korrigieren Sie ihn. Ein DOI muss mit "10." beginnen</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:title_unpaywall_unavailable">Unpaywall nicht verfügbar</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unable_to_reach_unpaywall">Der Unpaywall-Dienst ist
     momentan nicht verfügbar.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unpaywall_error">Der Unpaywall-Dienst meldet einen

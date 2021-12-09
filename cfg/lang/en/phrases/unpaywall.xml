@@ -11,6 +11,10 @@
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:default_title">Unpaywall Lookup</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_publisher">A PDF (<epc:pin name="version"/>) is 
     available Open Access on the publisher's website at the following URL: <epc:pin name="url"/>.</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_publisher_bronze">A PDF (<epc:pin name="version"/>) 
+    is available on the publisher's website at the following URL: <epc:pin name="url"/>. After you have 
+    uploaded the document to ZORA, the ZORA editorial team verifies that the document is Open Access. 
+    If not, it will be made accessible only to registered users.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:oa_repository">A PDF (<epc:pin name="version"/>) is
     available Open Access at a <epc:pin name="host_type"/> at the following URL: <epc:pin name="url"/>.<br/>
     Please inspect the PDF first for cover pages or watermarks before you decide to upload it to ZORA.</epp:phrase>
@@ -22,6 +26,7 @@
     according to Unpaywall.</epp:phrase>
 
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:repository">repository</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:publisher">publisher</epp:phrase>
 
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:download">Download</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:get_pdf">Get PDF</epp:phrase>
@@ -49,6 +54,7 @@
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:no_doi">The ZORA item has no DOI.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:invalid_doi">The DOI <epc:pin name="doi"/> 
     of the ZORA item is invalid. Please correct it. It must start with "10."</epp:phrase>
+  <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:title_unpaywall_unavailable">Unpaywall unavailable</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unable_to_reach_unpaywall">Unable to reach 
     the Unpaywall service. It may be temporarily down.</epp:phrase>
   <epp:phrase id="Plugin/InputForm/Component/Upload_Unpaywall:unpaywall_error">Error in the Unpaywall response:

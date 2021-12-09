@@ -73,12 +73,17 @@ sub render_title
 	{
 		return $self->html_phrase( "title_doierror" );
 	}
+	
+	if (200 != $response->code && 404 != $response->code)
+	{
+		 return $self->html_phrase( "title_unpaywall_unavailable" );
+	}
 	else
 	{
 		my $content = $response->content;
 		my $json_vars = JSON::decode_json($content);
 		
-		if ($json_vars->{error} eq "true" )
+		if (defined $json_vars->{error} && $json_vars->{error} eq "true" )
 		{
 			return $self->html_phrase( "title_error" );
 		}
@@ -141,8 +146,9 @@ sub render_content
 		my $content = $response->content;
 		my $json_vars = JSON::decode_json($content);
 		my $best_oa_location = $json_vars->{best_oa_location};
+		my $oa_status = $json_vars->{oa_status};
 		
-		if ($json_vars->{error} eq "true" )
+		if (defined $json_vars->{error} && $json_vars->{error} eq "true" )
 		{
 			$html->appendChild( $self->html_phrase( "unpaywall_error",
 			  message => $session->make_text( $json_vars->{message} ) 
@@ -168,10 +174,21 @@ sub render_content
 				
 				if ($host_type eq 'publisher')
 				{
-					$html->appendChild( $self->html_phrase( "oa_publisher",
-						url => $url_link,
-						version => $version_phrase,
-					) );
+					# bronze OA (free instead of OA version) requires special phrasing
+					if ($oa_status eq 'bronze')
+					{
+						$html->appendChild( $self->html_phrase( "oa_publisher_bronze",
+							url => $url_link,
+							version => $version_phrase,
+						) );
+					}
+					else
+					{
+						$html->appendChild( $self->html_phrase( "oa_publisher",
+							url => $url_link,
+							version => $version_phrase,
+						) );
+					}
 				}
 				else
 				{
@@ -194,7 +211,7 @@ sub render_content
 					if ( $session->get_lang->has_phrase( 
 						$self->html_phrase_id( "license_" . $license  ) 
 					) )
-					{			
+					{
 						$html->appendChild( $self->html_phrase( "oa_license",
 							license => $self->html_phrase( "license_" . $license ),
 						) );
@@ -206,7 +223,6 @@ sub render_content
 						) );
 					}
 				}
-
 				
 				my $download_button_div = $session->make_element( "div",
 					style => "text-align:right;",
